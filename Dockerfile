@@ -1,6 +1,7 @@
 ARG AGOLAWEB_IMAGE="agola-web"
+ARG AGOLAWEB_VERSION="master"
 
-FROM $AGOLAWEB_IMAGE as agola-web
+FROM $AGOLAWEB_IMAGE:$AGOLAWEB_VERSION as agola-web
 
 #######
 ####### Build the backend
