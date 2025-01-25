@@ -80,6 +80,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: AGOLAWEB_IMAGE=ghcr.io/wanimatrix/agola-web
+          platforms: linux/arm64/v8
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
